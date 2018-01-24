@@ -339,7 +339,15 @@ function insertItemPortionName(html,
   html = insertProperty(html, portionPropName, portionValue);
   return html;
 }
+  
+function myfunction() { 
+var ordername = document.getElementById("{{name}}").value;
+ var Amount = document.getElementById("{{price_large}}").value; 
+var answer =parseFloat(ordername)+parseFloat(Amount);
 
+var total = document.getElementById('answer');
+answer.value=answer;
+    }
 
 global.$dc = dc;
 
