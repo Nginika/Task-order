@@ -339,7 +339,11 @@ function insertItemPortionName(html,
   html = insertProperty(html, portionPropName, portionValue);
   return html;
 }
-  
+ // order button clicks for successful
+  function clickAlert() {
+    alert("your order has been taken successfully!");
+}
+  //function for order that I've not gotten right
 function myfunction() { 
 var ordername = document.getElementById("{{name}}").value;
  var Amount = document.getElementById("{{price_large}}").value; 
