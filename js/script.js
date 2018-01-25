@@ -324,7 +324,16 @@ function insertItemPrice(html,
   html = insertProperty(html, pricePropName, priceValue);
   return html;
 }
-
+  
+  //another added function, lemme see first
+function buildAndShowOrderPage (categories){
+  $ajaxUtils.sendGetRequest (
+    orderItemHtml,
+    function (homeHtml) {
+      insertHtml ("#main-content",orderItemUrl);
+    },
+    false);
+}
 
 // Appends portion name in parens if it exists
 function insertItemPortionName(html,
