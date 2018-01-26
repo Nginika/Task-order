@@ -22,6 +22,8 @@ var menuItemsUrl =
   "https://davids-restaurant.herokuapp.com/menu_items.json?category=";
 var menuItemsTitleHtml = "snippets/menu-items-title.html";
 var menuItemHtml = "snippets/menu-item.html";
+var orderItemHtml= "order.html";
+var deliverItemHtml="delivery.html";
 
 // Convenience function for inserting innerHTML for 'select'
 var insertHtml = function (selector, html) {
@@ -330,7 +332,7 @@ function buildAndShowOrderPage (categories){
   $ajaxUtils.sendGetRequest (
     orderItemHtml,
     function (homeHtml) {
-      insertHtml ("#main-content",orderItemUrl);
+      insertHtml ("#main-content",orderItemHtml);
     },
     false);
 }
