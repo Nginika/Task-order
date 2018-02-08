@@ -227,6 +227,11 @@ h3.menu-item-title {
   font-size: .9em;
   font-style: italic;
 }
+input {
+background-color: #557c3e;
+border-color: pink;
+
+}
 /* END SINGLE CATEGORY PAGE */
 
 
